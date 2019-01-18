@@ -130,8 +130,10 @@ namespace Ex28_Rewriting
                     } while (true);
                     RunMenu();
                     break;
+
                 case "0":
                     break;
+
                 default:
                     do
                     {
