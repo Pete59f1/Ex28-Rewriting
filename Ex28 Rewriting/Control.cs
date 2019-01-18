@@ -18,7 +18,7 @@ namespace Ex28_Rewriting
         public void InsertOwner(string firstName, string lastName, string phone, string email)
         {
            Owner own = new Owner { FirstName = firstName, LastName = lastName, Phone = phone, Email = email };
-            DBC.InsertOwner(own);
+           DBC.InsertOwner(own);
         }
 
         public List<Pet> ShowPets()
@@ -28,7 +28,7 @@ namespace Ex28_Rewriting
 
         public Owner FindOwnerByLastName(string lastName)
         {
-             return DBC.FindOwnerByLastName(lastName);
+            return DBC.FindOwnerByLastName(lastName);
         }
 
         public Owner FindOwnerByEmail(string email, string name)
