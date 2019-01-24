@@ -138,7 +138,7 @@ namespace Ex28_Rewriting
                     do
                     {
                         Console.WriteLine("??");
-                        Console.WriteLine("\n");
+                        Console.Write("\n");
                         break;
 
                     } while (true);
