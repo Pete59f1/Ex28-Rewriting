@@ -34,9 +34,9 @@ namespace View_WPF
 
         private void AllPetsBut_Click(object sender, RoutedEventArgs e)
         {
-            foreach (Pet pet in cont.ShowPets())
+            for (int i = 0; i < cont.ShowPets().Count; i++)
             {
-                allPetsTB.Text += pet.Name + pet.Type + pet.Breed + pet.DOB + pet.Weight + pet.OwnerId + "\n";
+                allPetsTB.Text += cont.ShowPets()[i].Name + cont.ShowPets()[i].Type + cont.ShowPets()[i].Breed + cont.ShowPets()[i].DOB + cont.ShowPets()[i].Weight + cont.ShowPets()[i].OwnerId + "\n";
             }
         }
 
