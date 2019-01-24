@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex28 Rewriting", "Ex28 Rewriting\Ex28 Rewriting.csproj", "{CD27E4F1-EC27-4169-AE27-FCC4A364E347}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View-WPF", "View-WPF\View-WPF.csproj", "{3F00AFB7-148F-4949-BFCC-E2DC49EF6EB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CD27E4F1-EC27-4169-AE27-FCC4A364E347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD27E4F1-EC27-4169-AE27-FCC4A364E347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD27E4F1-EC27-4169-AE27-FCC4A364E347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F00AFB7-148F-4949-BFCC-E2DC49EF6EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F00AFB7-148F-4949-BFCC-E2DC49EF6EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F00AFB7-148F-4949-BFCC-E2DC49EF6EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F00AFB7-148F-4949-BFCC-E2DC49EF6EB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
