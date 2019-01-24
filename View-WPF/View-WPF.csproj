@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ex28 Rewriting\Ex28 Rewriting.csproj">
+      <Project>{cd27e4f1-ec27-4169-ae27-fcc4a364e347}</Project>
+      <Name>Ex28 Rewriting</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
