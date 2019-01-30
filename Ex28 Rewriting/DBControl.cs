@@ -11,7 +11,7 @@ namespace Ex28_Rewriting
     public class DBControl
     {
         private static string conntectionString =
-        "Server = ealSQL1.eal.local; Database = A_DB26_2018; User Id = A_STUDENT26; Password = A_OPENDB26;";
+        "Server = ealSQL1.eal.local; Database = A_DB28_2018; User Id = A_STUDENT28; Password = A_OPENDB28;";
 
         public void InsertPet(Pet pet)
         {
