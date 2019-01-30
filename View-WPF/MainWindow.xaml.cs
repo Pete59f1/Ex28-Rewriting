@@ -19,12 +19,13 @@ namespace View_WPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, ISubscriber
     {
         Ex28_Rewriting.Control cont = new Ex28_Rewriting.Control();
         public MainWindow()
         {
             InitializeComponent();
+            cont.RegisterSubscriber(this);
         }
 
         private void FindOwnerBut_Click(object sender, RoutedEventArgs e)
@@ -48,6 +49,11 @@ namespace View_WPF
         private void InsertPetBut_Click(object sender, RoutedEventArgs e)
         {
             cont.InsertPet(petNameTB.Text, petTypeTB.Text, petBreedTB.Text, petDOBTB.Text, petWeightTB.Text, petOwnerIdTB.Text);
+        }
+
+        public void Update(IPublisher publisher, string message)
+        {
+            allPetsTB.Text += cont.ShowPets()[cont.ShowPets().Count - 1].Name + cont.ShowPets()[cont.ShowPets().Count - 1].Type + cont.ShowPets()[cont.ShowPets().Count - 1].Breed + cont.ShowPets()[cont.ShowPets().Count - 1].DOB + cont.ShowPets()[cont.ShowPets().Count - 1].Weight + cont.ShowPets()[cont.ShowPets().Count - 1].OwnerId + "\n";
         }
     }
 }
