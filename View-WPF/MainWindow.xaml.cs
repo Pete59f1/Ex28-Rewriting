@@ -30,7 +30,10 @@ namespace View_WPF
 
         private void FindOwnerBut_Click(object sender, RoutedEventArgs e)
         {
-            findOwnerBlock.Text = cont.FindOwnerByLastName(findOwerByLNTB.Text).LastName +  " " + cont.FindOwnerByLastName(findOwerByLNTB.Text).FirstName;
+            for (int i = 0; i < cont.FindOwnerByLastName(findOwerByLNTB.Text).Count; i++)
+            {
+                findOwnerBlock.Text += cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].LastName + " " + cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].FirstName;
+            }
         }
 
         private void AllPetsBut_Click(object sender, RoutedEventArgs e)

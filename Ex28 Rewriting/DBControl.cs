@@ -104,9 +104,9 @@ namespace Ex28_Rewriting
             }
         }
 
-        public Owner FindOwnerByLastName(string lastName)
+        public List<Owner> FindOwnerByLastName(string lastName)
         {
-            Owner owner = null;
+            List<Owner> owners = new List<Owner>();
             using (SqlConnection con = new SqlConnection(conntectionString))
             {
                 try
@@ -127,7 +127,7 @@ namespace Ex28_Rewriting
                             string lname = read["OwnerLastName"].ToString();
                             string phone = read["OwnerPhone"].ToString();
                             string email = read["OwnerEmail"].ToString();
-                            owner = new Owner { FirstName = fname, LastName = lname, Phone = phone, Email = email };
+                            owners.Add( new Owner { FirstName = fname, LastName = lname, Phone = phone, Email = email });
                         }
                     }
                 }
@@ -136,7 +136,7 @@ namespace Ex28_Rewriting
                 {
                     Console.WriteLine("Hovsa " + e.Message);
                 }
-                return owner;
+                return owners;
             }
         }
 

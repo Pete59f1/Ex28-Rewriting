@@ -29,7 +29,7 @@ namespace Ex28_Rewriting
             return DBC.ShowPets();
         }
 
-        public Owner FindOwnerByLastName(string lastName)
+        public List<Owner> FindOwnerByLastName(string lastName)
         {
             return DBC.FindOwnerByLastName(lastName);
         }

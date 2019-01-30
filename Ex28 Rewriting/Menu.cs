@@ -102,11 +102,12 @@ namespace Ex28_Rewriting
                     do
                     {
                         Console.Clear();
+                        List<Owner> owners = new List<Owner>();
                         Console.WriteLine("Owner last name?");
                         lastName = Console.ReadLine();
-                        Owner owner = cont.FindOwnerByLastName(lastName);
+                        owners = cont.FindOwnerByLastName(lastName);
 
-                        Console.WriteLine(owner.LastName + " " + owner.FirstName + " " + owner.Phone + " " + owner.Email);
+                        //Console.WriteLine(owners.LastName + " " + owner.FirstName + " " + owner.Phone + " " + owner.Email);
                         Console.Write("\n");
                         break;
 
