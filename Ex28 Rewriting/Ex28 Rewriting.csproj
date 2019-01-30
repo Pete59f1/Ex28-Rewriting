@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Control.cs" />
     <Compile Include="DBControl.cs" />
+    <Compile Include="IPublisher.cs" />
+    <Compile Include="ISubscriber.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Pet.cs" />
