@@ -8,6 +8,7 @@ namespace Ex28_Rewriting
 {
     public class Control
     {
+
         DBControl DBC = new DBControl();
         public void InsertPet(string name, string type, string breed, string dob, string weight, string ownerId)
         {

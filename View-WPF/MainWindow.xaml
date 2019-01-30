@@ -13,17 +13,17 @@
         <Button Name="findOwnerBut" Content="Find Owner" HorizontalAlignment="Left" Margin="629,92,0,0" VerticalAlignment="Top" Width="75" Click="FindOwnerBut_Click" RenderTransformOrigin="0.682,1.29"/>
         <Label Content="Welcome YOLO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="99,29,0,0" Height="58" Width="297"/>
         <Image Source="C:\Users\pe791\Pictures/Kat.jpg" HorizontalAlignment="Left" Height="167" Margin="44,92,0,0" VerticalAlignment="Top" Width="178"/>
-        <TextBox Name="ownerFNTB" HorizontalAlignment="Left" Height="23" Margin="385,140,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="ownerLNTB" HorizontalAlignment="Left" Height="23" Margin="385,187,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="ownerTLFTB" HorizontalAlignment="Left" Height="23" Margin="385,236,0,0" TextWrapping="Wrap" Text="TLF" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="ownerEmailTB" HorizontalAlignment="Left" Height="23" Margin="385,286,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="petNameTB" HorizontalAlignment="Left" Height="23" Margin="260,126,0,0" TextWrapping="Wrap" Text="Pet Name" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="petBreedTB" HorizontalAlignment="Left" Height="23" Margin="260,222,0,0" TextWrapping="Wrap" Text="Breed" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.084,-4.177"/>
-        <TextBox Name="petTypeTB" HorizontalAlignment="Left" Height="23" Margin="260,173,0,0" TextWrapping="Wrap" Text="Type" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="petDOBTB" HorizontalAlignment="Left" Height="23" Margin="260,272,0,0" TextWrapping="Wrap" Text="DOB" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="petWeightTB" HorizontalAlignment="Left" Height="23" Margin="260,318,0,0" TextWrapping="Wrap" Text="Weight" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="petOwnerIdTB" HorizontalAlignment="Left" Height="23" Margin="260,362,0,0" TextWrapping="Wrap" Text="Owner Id" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="findOwerByLNTB" HorizontalAlignment="Left" Height="37" Margin="629,135,0,0" TextWrapping="Wrap" Text="Owner Name" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="ownerFNTB" HorizontalAlignment="Left" Height="23" Margin="385,140,0,0" TextWrapping="Wrap" ToolTip="First Name" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="ownerLNTB" HorizontalAlignment="Left" Height="23" Margin="385,187,0,0" TextWrapping="Wrap" ToolTip="Last Name" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="ownerTLFTB" HorizontalAlignment="Left" Height="23" Margin="385,236,0,0" TextWrapping="Wrap" ToolTip="TLF" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="ownerEmailTB" HorizontalAlignment="Left" Height="23" Margin="385,286,0,0" TextWrapping="Wrap" ToolTip="Email" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="petNameTB" HorizontalAlignment="Left" Height="23" Margin="260,126,0,0" TextWrapping="Wrap" ToolTip="Pet Name" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="petBreedTB" HorizontalAlignment="Left" Height="23" Margin="260,222,0,0" TextWrapping="Wrap" ToolTip="Breed" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.084,-4.177"/>
+        <TextBox Name="petTypeTB" HorizontalAlignment="Left" Height="23" Margin="260,173,0,0" TextWrapping="Wrap" ToolTip="Type" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="petDOBTB" HorizontalAlignment="Left" Height="23" Margin="260,272,0,0" TextWrapping="Wrap" ToolTip="DOB" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="petWeightTB" HorizontalAlignment="Left" Height="23" Margin="260,318,0,0" TextWrapping="Wrap" ToolTip="Weight" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="petOwnerIdTB" HorizontalAlignment="Left" Height="23" Margin="260,362,0,0" TextWrapping="Wrap" ToolTip="Owner Id" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="findOwerByLNTB" HorizontalAlignment="Left" Height="37" Margin="629,135,0,0" TextWrapping="Wrap" ToolTip="Owner Name" VerticalAlignment="Top" Width="75"/>
         <TextBlock Name="findOwnerBlock" HorizontalAlignment="Left" Margin="629,194,0,0" TextWrapping="Wrap" Text="Owner" VerticalAlignment="Top" Height="65" Width="75"/>
         <TextBox Name="allPetsTB" HorizontalAlignment="Left" Height="250" Margin="501,135,0,0" TextWrapping="Wrap" Text="Pets" VerticalAlignment="Top" Width="75"/>
     </Grid>
