@@ -26,21 +26,17 @@ namespace View_WPF
         {
             InitializeComponent();
             cont.RegisterSubscriber(this);
+            for (int i = 0; i < cont.ShowPets().Count; i++)
+            {
+                allPetsTB.Text += cont.ShowPets()[i].Name + " " + cont.ShowPets()[i].Type + " " + cont.ShowPets()[i].Breed + " " + cont.ShowPets()[i].DOB + " " + cont.ShowPets()[i].Weight + " " + cont.ShowPets()[i].OwnerId + "\n";
+            }
         }
 
         private void FindOwnerBut_Click(object sender, RoutedEventArgs e)
         {
             for (int i = 0; i < cont.FindOwnerByLastName(findOwerByLNTB.Text).Count; i++)
             {
-                findOwnerBlock.Text += cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].LastName + " " + cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].FirstName;
-            }
-        }
-
-        private void AllPetsBut_Click(object sender, RoutedEventArgs e)
-        {
-            for (int i = 0; i < cont.ShowPets().Count; i++)
-            {
-                allPetsTB.Text += cont.ShowPets()[i].Name + cont.ShowPets()[i].Type + cont.ShowPets()[i].Breed + cont.ShowPets()[i].DOB + cont.ShowPets()[i].Weight + cont.ShowPets()[i].OwnerId + "\n";
+                findOwnerBlock.Text += cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].LastName + " " + cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].FirstName + " " + cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].Phone + " " + cont.FindOwnerByLastName(findOwerByLNTB.Text)[i].Email + "\n";
             }
         }
 
@@ -56,7 +52,7 @@ namespace View_WPF
 
         public void Update(IPublisher publisher, string message)
         {
-            allPetsTB.Text += cont.ShowPets()[cont.ShowPets().Count - 1].Name + cont.ShowPets()[cont.ShowPets().Count - 1].Type + cont.ShowPets()[cont.ShowPets().Count - 1].Breed + cont.ShowPets()[cont.ShowPets().Count - 1].DOB + cont.ShowPets()[cont.ShowPets().Count - 1].Weight + cont.ShowPets()[cont.ShowPets().Count - 1].OwnerId + "\n";
+            allPetsTB.Text += cont.ShowPets()[cont.ShowPets().Count - 1].Name + " " + cont.ShowPets()[cont.ShowPets().Count - 1].Type + " " + cont.ShowPets()[cont.ShowPets().Count - 1].Breed + " " + cont.ShowPets()[cont.ShowPets().Count - 1].DOB + " " + cont.ShowPets()[cont.ShowPets().Count - 1].Weight + " " + cont.ShowPets()[cont.ShowPets().Count - 1].OwnerId + "\n";
         }
     }
 }
